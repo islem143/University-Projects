@@ -8,162 +8,208 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div style="width: 500px; height: 500px; margin: 100px auto">
-      <!-- <svg viewBox="0 0 200 200" class="wink">
-        <ellipse
-          cx="50%"
-          cy="50%"
-          rx="80"
-          ry="95"
-          stroke="currentColor"
-          fill="#FFCC99"
-        />
-        <path
-          stroke-linecap="round"
-          d="m70 45 c0 0, 10 0, 25 5"
-          stroke-width="2"
-          fill="none"
-          stroke="currentColor"
-        />
-        <path
-          stroke-linecap="round"
-          stroke-width="2"
-          d="m105 45 c0 5, 0 0, 25 0"
-          fill="none"
-          stroke="currentColor"
-        />
-
-        <ellipse
-          cx="64%"
-          cy="33%"
-          rx="15"
-          ry="15"
-          class="eye"
-          fill="currentColor"
-        />
-        <ellipse cx="64%" cy="33%" rx="5" ry="5" class="eye" fill="white" />
-        <ellipse
-          cx="33%"
-          cy="33%"
-          rx="15"
-          ry="15"
-          class="eye left-eye"
-          fill="currentColor"
-        />
-        <ellipse
-          cx="33%"
-          cy="33%"
-          rx="5"
-          ry="5"
-          class="eye left-eye"
-          fill="white"
-        />
-
-
-        
-        <path
-          id="mouth"
-          class="mouth"
-          stroke-linecap="round"
-          d="m77 150 c0 0, 0 0, 45 0"
-          stroke-width="3"
-          fill="none"
-          stroke="currentColor"
-        />
+    <div class="container">
+      <div class="left_face">
+        <div style="width: 500px; height: 500px; margin: 100px auto">
+          <!-- <svg viewBox="0 0 200 200" class="wink">
+            <ellipse
+              cx="50%"
+              cy="50%"
+              rx="80"
+              ry="95"
+              stroke="currentColor"
+              fill="#FFCC99"
+            />
+            <path
+              stroke-linecap="round"
+              d="m70 45 c0 0, 10 0, 25 5"
+              stroke-width="2"
+              fill="none"
+              stroke="currentColor"
+            />
+            <path
+              stroke-linecap="round"
+              stroke-width="2"
+              d="m105 45 c0 5, 0 0, 25 0"
+              fill="none"
+              stroke="currentColor"
+            />
+    
+            <ellipse
+              cx="64%"
+              cy="33%"
+              rx="15"
+              ry="15"
+              class="eye"
+              fill="currentColor"
+            />
+            <ellipse cx="64%" cy="33%" rx="5" ry="5" class="eye" fill="white" />
+            <ellipse
+              cx="33%"
+              cy="33%"
+              rx="15"
+              ry="15"
+              class="eye left-eye"
+              fill="currentColor"
+            />
+            <ellipse
+              cx="33%"
+              cy="33%"
+              rx="5"
+              ry="5"
+              class="eye left-eye"
+              fill="white"
+            />
+    
+    
+            
+            <path
+              id="mouth"
+              class="mouth"
+              stroke-linecap="round"
+              d="m77 150 c0 0, 0 0, 45 0"
+              stroke-width="3"
+              fill="none"
+              stroke="currentColor"
+            />
+             
          
-     
-      </svg> -->
-      <svg
-        width="149"
-        height="226"
-        viewBox="0 0 149 226"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M80.4179 1.42788C49.2179 -1.77212 30.0846 13.7612 24.4179 21.9279C-9.58208 65.928 3.91785 100.382 2.41788 100.928C-1.58215 102.382 17.9179 174.428 19.9179 184.428C21.9179 194.428 53.9179 226.928 79.4179 224.928C104.918 222.928 122.918 193.428 126.918 189.428C130.918 185.428 144.918 159.428 147.918 95.4277C150.918 31.4277 119.418 5.42788 80.4179 1.42788Z"
-          fill="#FFCC99"
-          stroke="black"
-        />
-        <path
-          d="M67.9179 116.928C68.5845 129.428 69.5179 154.528 67.9179 154.928C66.3179 155.328 70.5845 159.094 72.9179 160.928"
-          stroke="black"
-        />
-        <path
-          d="M27.9178 112.428C25.5178 112.428 23.9178 115.428 23.4178 116.928C22.9178 122.428 27.9178 127.428 27.9178 127.928C27.9178 128.428 33.9178 130.928 33.9178 131.428C33.9178 131.928 40.4178 132.428 42.9178 132.928C45.4178 133.428 51.4178 131.428 52.4178 131.428C53.4178 131.428 55.9178 128.928 57.4178 127.428C58.4178 127.428 59.9178 122.928 60.9178 119.928C61.9178 116.928 60.4178 114.428 59.4178 113.428C58.4178 112.428 51.4178 110.428 50.9178 110.428H37.4178C34.4178 109.928 31.9178 110.928 27.9178 112.428Z"
-          fill="white"
-          stroke="black"
-        />
-        <path
-          d="M94.953 108.558C92.553 108.558 90.953 111.558 90.453 113.058C89.953 118.558 94.953 123.558 94.953 124.058C94.953 124.558 100.953 127.058 100.953 127.558C100.953 128.058 107.453 128.558 109.953 129.058C112.453 129.558 118.453 127.558 119.453 127.558C120.453 127.558 122.953 125.058 124.453 123.558C125.453 123.558 126.953 119.058 127.953 116.058C128.953 113.058 127.453 110.558 126.453 109.558C125.453 108.558 118.453 106.558 117.953 106.558H104.453C101.453 106.058 98.953 107.058 94.953 108.558Z"
-          fill="white"
-          stroke="black"
-        />
-        <path
-        class="brow-right"
-          d="M119.266 91.4437C120.072 91.0556 125.258 92.0326 127.75 92.5696C129.246 92.8779 127.713 95.0693 127.213 95.0619C126.713 95.0544 122.706 95.4951 122.213 94.9877C121.721 94.4803 115.707 95.3912 114.714 94.8765C113.722 94.3617 100.201 95.6613 97.6939 96.1242C95.1868 96.587 95.7104 94.995 97.7324 93.5248C99.7544 92.0547 101.32 92.5779 105.32 92.6373C107.342 91.1672 118.258 91.9288 119.266 91.4437Z"
-          fill="black"
-          stroke="black"
-        />
-        <path
-        class="brow-left"
-          d="M27.1659 91.0996C26.3645 90.6999 21.1552 91.5993 18.6507 92.099C17.148 92.3849 18.6507 94.5975 19.1516 94.5975C19.6526 94.5975 23.6597 95.0972 24.1606 94.5975C24.6615 94.0978 30.6722 95.0972 31.674 94.5975C32.6758 94.0978 46.1998 95.5969 48.7043 96.0966C51.2088 96.5964 50.7079 94.9977 48.7044 93.4985C46.7008 91.9994 45.1248 92.4991 41.1176 92.4991C39.114 91.0001 28.1677 91.5993 27.1659 91.0996Z"
-          fill="black"
-          stroke="black"
-        />
-
-        <circle cx="107.418" cy="114.428" r="2" fill="black" />
-        <circle cx="44.4178" cy="116.428" r="2" fill="black" />
-        <path
-          id="mouth"
-          class="mouth"
-          d="M95 180H60"
-          stroke="black"
-          stroke-width="2"
-        />
-
-        <!-- <svg width="36" height="13" viewBox="0 0 36 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M1 1C7.38788 9.30086 23.1309 20.9221 35 1" stroke="black" stroke-width="2"/>
           </svg> -->
-
-        <defs>
-          <filter
-            id="filter0_d_0_1"
-            x="22.9178"
-            y="94.9277"
-            width="41.9996"
-            height="13.0078"
-            filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+          <svg
+            id="face"
+            viewBox="0 0 149 226"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
-            <feColorMatrix
-              in="SourceAlpha"
-              type="matrix"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-              result="hardAlpha"
+            <path
+              class="chin"
+              d="M80.4179 1.42788C49.2179 -1.77212 30.0846 13.7612 24.4179 21.9279C-9.58208 65.928 3.91785 100.382 2.41788 100.928C-1.58215 102.382 17.9179 174.428 19.9179 184.428C21.9179 194.428 53.9179 226.928 79.4179 224.928C104.918 222.928 122.918 193.428 126.918 189.428C130.918 185.428 144.918 159.428 147.918 95.4277C150.918 31.4277 119.418 5.42788 80.4179 1.42788Z"
+              fill="#FFCC99"
+              stroke="black"
             />
-            <feOffset dy="4" />
-            <feGaussianBlur stdDeviation="2" />
-            <feComposite in2="hardAlpha" operator="out" />
-            <feColorMatrix
-              type="matrix"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+            <path
+              class="nose"
+              d="M71.2619 122C71.7603 134.5 72.4581 159.6 71.2619 160C70.0658 160.4 73.2556 164.167 75 166"
+              stroke="black"
             />
-            <feBlend
-              mode="normal"
-              in2="BackgroundImageFix"
-              result="effect1_dropShadow_0_1"
+            <path
+              class="left-nose hidden"
+              d="M74.5 144.5C79.5 147.333 88.7 153.8 85.5 157"
+              stroke="black"
             />
-            <feBlend
-              mode="normal"
-              in="SourceGraphic"
-              in2="effect1_dropShadow_0_1"
-              result="shape"
+            <path
+              class="right-nose hidden"
+              d="M63 145C58.2833 147.947 49.6045 154.672 52.6232 158"
+              stroke="black"
             />
-          </filter>
-        </defs>
-      </svg>
+            <path
+              d="M92.3112 116.624C108.744 111.439 118.178 115.173 122.091 117.334C127.177 124.786 109.538 123.92 103.506 125C89.6494 122.975 76.2698 121.809 92.3112 116.624Z"
+              fill="white"
+              stroke="black"
+              class="lid-right"
+            />
+            <path
+              d="M55.6888 116.862C39.2563 111.206 29.8218 115.28 25.9093 117.637C20.823 125.767 38.462 124.821 44.4938 126C58.3506 123.791 71.7302 122.519 55.6888 116.862Z"
+              fill="white"
+              stroke="black"
+              class="lid-left"
+            />
+            <path
+              class="brow-right"
+              d="M122 102C113.064 101.245 94.9532 100.189 94 102"
+              fill="none"
+              stroke="black"
+              stroke-width="3"
+            />
+            <path
+              class="brow-left"
+              stroke-width="3"
+              d="M27.5 103.5C36.8333 103 55.5 102.3 55.5 103.5"
+              fill="none"
+              stroke="black"
+            />
+
+            <circle cx="107" cy="118" r="2" fill="black" />
+
+            <circle cx="44" cy="118" r="2" fill="black" />
+            <path
+              class="check-left"
+              d="M114.5 136C112.167 132.333 106.7 127.2 103.5 136C99.5 147 119.5 140.616 114.5 136Z"
+              stroke="black"
+            />
+            <path
+              class="check-right"
+              d="M43.5327 135.859C41.1994 132.192 35.7327 127.059 32.5327 135.859C28.5327 146.859 48.5327 140.476 43.5327 135.859Z"
+              stroke="black"
+            />
+            <path class="mouth-white hidden" d="M88 180H58C72.7541 173.521 65.8689 177.054 72.7541 175.287C78.2623 173.873 85.377 178.036 88 180Z" fill="white" stroke="black"/>
+
+            <path
+              class="lip"
+              d="M53 181C53 181 53 181 96 181"
+              stroke="black"
+              stroke-width="2"
+            />
+            <path
+              class="lip-left hidden"
+              d="M65 161C63.1667 166.318 58.4 176.754 54 175.957"
+              stroke="black"
+            />
+            <path
+              class="lip-right hidden"
+              d="M85 161C86.8333 166.333 91.6 176.8 96 176"
+              stroke="black"
+            />
+            <path class="mouth3 hidden" d="M54 177.5C60.1667 178.333 72.6 179.5 73 177.5" stroke="black"/>
+            <path class="mouth4 hidden" d="M96 178C89.1842 178.755 75.4421 179.811 75 178" stroke="black"/>
+            <path class="mouth5 hidden" d="M99.5 178C102 179.833 106.2 184 103 186" stroke="black"/>
+            <path class="mouth6 hidden" d="M53 178C50.8519 179.833 47.2432 184 49.9927 186" stroke="black"/>
+            <!-- <svg width="36" height="13" viewBox="0 0 36 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1C7.38788 9.30086 23.1309 20.9221 35 1" stroke="black" stroke-width="2"/>
+              </svg> -->
+              <ellipse  class="ell-mouth hidden" cx="75.5" cy="178" rx="10.5" ry="5" fill="white"/>
+
+            <defs>
+              <filter
+                id="filter0_d_0_1"
+                x="22.9178"
+                y="94.9277"
+                width="41.9996"
+                height="13.0078"
+                filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+              >
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feColorMatrix
+                  in="SourceAlpha"
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  result="hardAlpha"
+                />
+                <feOffset dy="4" />
+                <feGaussianBlur stdDeviation="2" />
+                <feComposite in2="hardAlpha" operator="out" />
+                <feColorMatrix
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                />
+                <feBlend
+                  mode="normal"
+                  in2="BackgroundImageFix"
+                  result="effect1_dropShadow_0_1"
+                />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="effect1_dropShadow_0_1"
+                  result="shape"
+                />
+              </filter>
+            </defs>
+          </svg>
+        </div>
+      </div>
+      <div class="right_options"></div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
