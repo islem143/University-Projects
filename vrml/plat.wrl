@@ -6,225 +6,182 @@
 WorldInfo {
 	title "Bouncing Ball"
 }
-DEF Floor Box {
-	size 15 400 0.20000000298023224
-}
 
-
-
-# DEF Floor2 Box {
-# 	size 15 200 0.20000000298023224
-# }
-
-
-DEF Bat Transform {
-	translation 20 100 -35
+DEF Road2 Transform {
+	translation 0 -1000 0
 	children Shape {
 		appearance Appearance {
 			material Material {
-				diffuseColor 0.20000000298023224 0.5 0.20000000298023224
+				diffuseColor 1 1 1
 			}
+			texture ImageTexture { url [ "road22.jpeg" ]} 
 		}
 		geometry Box {
-			size 15 20 70
+			size 2550 150 0.2
 		}
 	}
 }
+
+DEF ShopInterface1 Transform {
+	translation 1350 -800 -100
+	children Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 1 1 1 
+			}
+			texture ImageTexture { url [ "shop1.jpeg" ]} 
+		}
+		geometry Box {
+			size 10 300 200
+		}
+	}
+}
+DEF ShopBloc1 Transform {
+	translation 1450 -800 -100
+	children Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 0.4 0.4 0.4
+			}
+			
+		}
+		geometry Box {
+			size 200 300 200
+		}
+	}
+}
+
+
+DEF ShopInterface2 Transform {
+	translation 1350 -500 -100
+	children Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 1 1 1 
+			}
+			texture ImageTexture { url [ "shop2.jpeg" ]} 
+		}
+		geometry Box {
+			size 10 300 200
+		}
+	}
+}
+DEF ShopBloc2 Transform {
+	translation 1450 -500 -100
+	children Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 0.4 0.4 0.4
+			}
+			
+		}
+		geometry Box {
+			size 200 300 200
+		}
+	}
+}
+
+
+
+
+
+DEF Road3 Transform {
+	translation 1200 0 0
+	children Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 1 1 1
+			}
+			texture ImageTexture { url [ "road2.jpeg" ]} 
+		}
+		geometry Box {
+			size 150 1850 0.2
+		}
+	}
+}
+
+
+
+
+DEF Bat_1 Transform {
+	translation 0 -1200 -350
+	children Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 1 1 1 
+			}
+			texture ImageTexture { url [ "bloc.jpeg" ]} 
+		}
+		geometry Box {
+			size 300 200 700
+		}
+	}
+}
+
+
 DEF Bat_2 Transform {
-	translation 45 100 -35
+	translation 350 -1200 -350
 	children Shape {
 		appearance Appearance {
 			material Material {
-				diffuseColor 0.20000000298023224 0.5 0.20000000298023224
+				diffuseColor 1 1 1 
 			}
+			texture ImageTexture { url [ "bloc.jpeg" ]} 
 		}
 		geometry Box {
-			size 15 20 70
+			size 300 200 700
 		}
 	}
 }
+
+
+
 DEF Bat_3 Transform {
-	translation 20 70 -35
+	translation 700 -1200 -350
 	children Shape {
 		appearance Appearance {
 			material Material {
-				diffuseColor 0.20000000298023224 0.5 0.20000000298023224
+				diffuseColor 1 1 1 
 			}
+			texture ImageTexture { url [ "bloc.jpeg" ]} 
 		}
 		geometry Box {
-			size 15 20 70
+			size 300 200 700
 		}
 	}
 }
+
 DEF Bat_4 Transform {
-	translation 45 70 -35
+	translation -350 -1200 -350
 	children Shape {
 		appearance Appearance {
 			material Material {
-				diffuseColor 0.20000000298023224 0.5 0.20000000298023224
+				diffuseColor 1 1 1 
 			}
+			texture ImageTexture { url [ "bloc.jpeg" ]} 
 		}
 		geometry Box {
-			size 15 20 70
+			size 300 200 700
 		}
 	}
 }
 DEF Bat_5 Transform {
-	translation 20 40 -35
+	translation -700 -1200 -350
 	children Shape {
 		appearance Appearance {
 			material Material {
-				diffuseColor 0.20000000298023224 0.5 0.20000000298023224
+				diffuseColor 1 1 1 
 			}
+			texture ImageTexture { url [ "bloc.jpeg" ]} 
 		}
 		geometry Box {
-			size 15 20 70
-		}
-	}
-}
-DEF Bat_6 Transform {
-	translation 45 40 -35
-	children Shape {
-		appearance Appearance {
-			material Material {
-				diffuseColor 0.20000000298023224 0.5 0.20000000298023224
-			}
-		}
-		geometry Box {
-			size 15 20 70
-		}
-	}
-}
-DEF Bat_7 Transform {
-	translation 70 100 -35
-	children Shape {
-		appearance Appearance {
-			material Material {
-				diffuseColor 0.20000000298023224 0.5 0.20000000298023224
-			}
-		}
-		geometry Box {
-			size 15 20 70
-		}
-	}
-}
-DEF Bat_8 Transform {
-	translation 70 70 -35
-	children Shape {
-		appearance Appearance {
-			material Material {
-				diffuseColor 0.20000000298023224 0.5 0.20000000298023224
-			}
-		}
-		geometry Box {
-			size 15 20 70
-		}
-	}
-}
-DEF Bat_9 Transform {
-	translation 70 40 -35
-	children Shape {
-		appearance Appearance {
-			material Material {
-				diffuseColor 0.20000000298023224 0.5 0.20000000298023224
-			}
-		}
-		geometry Box {
-			size 15 20 70
+			size 300 200 700
 		}
 	}
 }
 
 
 
-DEF Bat_9 Transform {
-	translation 60 -20 -75
-	children Shape {
-		appearance Appearance {
-			material Material {
-				diffuseColor 0.20000000298023224 0.5 0.20000000298023224
-			}
-		}
-		geometry Box {
-			size 50 40 150
-		}
-	}
-
-}
-
-
-
-DEF Bat_9 Transform {
-	translation 60 -90 -75
-	children Shape {
-		appearance Appearance {
-			material Material {
-				diffuseColor 0.20000000298023224 0.5 0.20000000298023224
-			}
-			texture ImageTexture { url [ "1.jpeg" ]} 
-		}
-		geometry Box {
-			size 50 40 150
-		}
-	}
-}
-
-DEF Bat_9 Transform {
-	translation 60 -160 -75
-	children Shape {
-		appearance Appearance {
-			material Material {
-				diffuseColor 0.20000000298023224 0.5 0.20000000298023224
-			}
-		}
-		geometry Box {
-			size 40 70 150
-		}
-	}
-}
-
-DEF Floor2 Transform {
-	translation -192 -208 0
-	children Shape {
-		appearance Appearance {
-			material Material {
-				diffuseColor 0.9 0.9 0.9
-			}
-		}
-		geometry Box {
-			size 500 15 0.20000000298023224
-		}
-	}
-}
-
-DEF Floor3 Transform {
-	translation -192 0 0
-	children Shape {
-		appearance Appearance {
-			material Material {
-				diffuseColor 0.9 0.9 0.9
-			}
-		}
-		geometry Box {
-			size 15 400 0.20000000298023224
-		}
-	}
-}
-
-
-DEF Floor4 Transform {
-	translation -192 40 0
-	children Shape {
-		appearance Appearance {
-			material Material {
-				diffuseColor 0.9 0.9 0.9
-			}
-		}
-		geometry Box {
-			size 500 15 0.20000000298023224
-		}
-	}
-}
 
 
 DEF Market Transform {
@@ -439,7 +396,7 @@ DEF School_cylender2 Transform {
 
 
 DEF MUR1 Transform {
-	translation 0 -350 -65
+	translation 0 -1500 -65
 	children Shape {
 		appearance Appearance {
 			material Material {
@@ -455,7 +412,7 @@ DEF MUR1 Transform {
 
 
 DEF MUR2 Transform {
-	translation -500 150 -65
+	translation -2000 150 -65
 	children Shape {
 		appearance Appearance {
 			material Material {
@@ -474,7 +431,7 @@ DEF MUR2 Transform {
 
 
 DEF MUR3 Transform {
-	translation 0 650 -65
+	translation 0 2000 -65
 	children Shape {
 		appearance Appearance {
 			material Material {
@@ -508,7 +465,7 @@ DEF MUR3 Transform {
 
 
 DEF MUR41 Transform {
-	translation 500 450 -65
+	translation 1700 450 -65
 	children Shape {
 		appearance Appearance {
 			material Material {
@@ -524,7 +481,7 @@ DEF MUR41 Transform {
 }
 
 DEF MUR42 Transform {
-	translation 500 150 -65
+	translation 1700 150 -65
 	children [Shape {
 		appearance Appearance {
 			material Material {
@@ -551,7 +508,7 @@ DEF MUR42 Transform {
 
 
 DEF MUR43 Transform {
-	translation 500 -150 -65
+	translation 1700 -150 -65
 	children Shape {
 		appearance Appearance {
 			material Material {
