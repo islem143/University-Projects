@@ -30,6 +30,10 @@ class facePart {
 
 //let e=document.getElementById('mouth').setAttribute("d", "m77 150 c0 20, 40 20, 40 0");
 let lip = new facePart("lip");
+let lipUpper = new facePart("lip-upper");
+let lip12 = new facePart("lip-12");
+let lip14 = new facePart("lip-14");
+let lip15 = new facePart("lip-15");
 let lipRight = new facePart("lip-right");
 let lipLeft = new facePart("lip-left");
 let mouthWhite = new facePart("mouth-white");
@@ -158,6 +162,12 @@ function generateButtons() {
     },
     {
       id: "7",
+      name: "neutral",
+      action: () => {
+        lidLeft.addClass("narrow");
+        lidRight.addClass("narrow");
+       
+      },
     },
     {
       id: "8",
@@ -177,9 +187,7 @@ function generateButtons() {
       id: "10",
       name: "neutral",
       action: () => {
-        lipRight.removeClass("hidden");
-        lipLeft.removeClass("hidden");
-        mouthWhite.removeClass("hidden");
+        lipUpper.removeClass("hidden")
         lip.addClass("hidden")
        
       },
@@ -202,6 +210,7 @@ function generateButtons() {
       name: "neutral",
       action: () => {
         lip.addClass("puller");
+        lip12.removeClass("hidden")
       },
     },
     {
@@ -217,9 +226,8 @@ function generateButtons() {
       id: "14",
       name: "neutral",
       action: () => {
-        lip.addClass("depressor");
-        mouth5.removeClass("hidden");
-        mouth6.removeClass("hidden");
+        lip.addClass("hidden");
+        lip14.removeClass("hidden")
 
       },
     },
@@ -227,7 +235,8 @@ function generateButtons() {
       id: "15",
       name: "dimpler",
       action: () => {
-        lip.addClass("dimpler");
+        lip.addClass("depressor");
+       // lip15.removeClass("hidden")
       
 
       },
