@@ -99,6 +99,7 @@ svg.wink .eye:last-of-type {
   transition: 0.5s;
   d: path("M27.5 103.5C36.8333 103 56.5 111.8 56.5 113");
 }
+
 .brow-left.inner {
   transition: 0.5s;
   d: path("M122 102C113.064 101.245 94.4532 109.189 93.5 111");
@@ -110,6 +111,10 @@ svg.wink .eye:last-of-type {
 .brow-left.outer {
   transition: 0.5s;
   d: path("M123.5 92.9996C114.564 92.2446 94.9532 100.189 94 102");
+}
+.brow-left.outer.inner {
+  transition: 0.5s;
+  d: path("M122 96C114 96 94.9532 105 94 105");
 }
 
 .brow-left.lowerer {
@@ -183,9 +188,9 @@ svg.wink .eye:last-of-type {
   transition: 1s;
   d: path("M48.5 183C48.5 183 81 177.5 106 183.501");
 }
-.lip.raiser{
+.lip.raiser {
   transition: 1s;
-  d:path("M53 181C53 181 67 169.5 99 181");
+  d: path("M53 181C53 181 67 169.5 99 181");
 }
 
 .nose.winkler {
@@ -209,4 +214,11 @@ svg.wink .eye:last-of-type {
   d: path(
     "M43.5327 144.859C41.1994 141.192 35.7327 136.059 32.5327 144.859C28.5327 155.859 48.5327 149.476 43.5327 144.859Z"
   );
+}
+
+.myClass1 {
+  color: green;
+}
+.myClass2 {
+  color: red;
 }
