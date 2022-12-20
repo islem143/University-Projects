@@ -7,20 +7,57 @@ WorldInfo {
 	title "Bouncing Ball"
 }
 
-DEF Road2 Transform {
-	translation 0 -1000 0
-	children Shape {
-		appearance Appearance {
-			material Material {
-				diffuseColor 1 1 1
-			}
-			texture ImageTexture { url [ "road22.jpeg" ]} 
-		}
-		geometry Box {
-			size 2550 150 0.2
-		}
-	}
+Background {
+	# set_bind var
+	# groundAngle var
+
+
+	# backUrl var
+	# bottomUrl var
+	# frontUrl var
+	# leftUrl var
+	# rightUrl var
+	# topUrl var
+	# skyAngle var
+	skyColor 0.2 0.31 0.35
+	#isBound var
 }
+
+DEF Road2 Transform {
+	translation 0  2500 0
+	scale 100 1 1
+	children [Inline {url "Road.wrl"}]
+
+}
+
+
+DEF Floor Transform {
+	translation 0  3200 0
+	scale 100 1 1
+	children [Inline {url "Floor.wrl"}]
+}
+
+
+
+
+Transform {
+translation -1500  3000 -200
+rotation 1 0 0 -1.57
+children [
+Inline {url "tree.wrl"}
+]
+}
+
+
+Transform {
+translation 1500  3000 -200
+rotation 1 0 0 -1.57
+children [
+Inline {url "tree.wrl"}
+]
+}
+
+
 
 DEF ShopInterface1 Transform {
 	translation 1350 -800 -100
@@ -71,7 +108,36 @@ DEF ShopBloc2 Transform {
 	children Shape {
 		appearance Appearance {
 			material Material {
-				diffuseColor 0.4 0.4 0.4
+				diffuseColor 0.9 0.9 0.9
+			}
+			
+		}
+		geometry Box {
+			size 200 300 200
+		}
+	}
+}
+
+DEF ShopInterface3 Transform {
+	translation 1350 -200 -100
+	children Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 1 1 1 
+			}
+			texture ImageTexture { url [ "shop3.jpeg" ]} 
+		}
+		geometry Box {
+			size 10 300 200
+		}
+	}
+}
+DEF ShopBloc3 Transform {
+	translation 1450 -200 -100
+	children Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 0.8 0.8 0.8
 			}
 			
 		}
@@ -82,6 +148,66 @@ DEF ShopBloc2 Transform {
 }
 
 
+
+DEF ShopInterface3 Transform {
+	translation 1350 100 -100
+	children Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 1 1 1 
+			}
+			texture ImageTexture { url [ "shop1.jpeg" ]} 
+		}
+		geometry Box {
+			size 10 300 200
+		}
+	}
+}
+DEF ShopBloc3 Transform {
+	translation 1450 100 -100
+	children Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 1 1 1
+			}
+			
+		}
+		geometry Box {
+			size 200 300 200
+		}
+	}
+}
+
+
+
+DEF ShopInterface4 Transform {
+	translation 1350 400 -100
+	children Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 1 1 1 
+			}
+			texture ImageTexture { url [ "shop2.jpeg" ]} 
+		}
+		geometry Box {
+			size 10 300 200
+		}
+	}
+}
+DEF ShopBloc4 Transform {
+	translation 1450 400 -100
+	children Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 0.4 0.4 0.4
+			}
+			
+		}
+		geometry Box {
+			size 200 300 200
+		}
+	}
+}
 
 
 
@@ -181,218 +307,10 @@ DEF Bat_5 Transform {
 }
 
 
+Inline {url "Mosque.wrl"}
+Inline {url "library.wrl"}
 
 
-
-DEF Market Transform {
-	translation -100 90 -35
-	children Shape {
-		appearance Appearance {
-			material Material {
-				diffuseColor 0.20000000298023224 0.5 0.20000000298023224
-			}
-		}
-		geometry Box {
-			size 150 70 70
-		}
-	}
-}
-
-
-DEF Market_TOP Transform {
-	translation -100 90 -90
-	children Shape {
-		appearance Appearance {
-			material Material {
-				diffuseColor 0.20000000298023224 0.5 0.20000000298023224
-			}
-		}
-		geometry Box {
-			size 80 50 50
-		}
-	}
-}
-
-
-
-
-DEF Mosque Transform {
-	translation -100 450 -35
-	children Shape {
-		appearance Appearance {
-			material Material {
-				diffuseColor 0.20000000298023224 0.5 0.20000000298023224
-			}
-			texture ImageTexture { url [ "2.jpeg" ]} 
-		}
-		geometry Box {
-			size 180 200 120
-		}
-	}
-}
-DEF Mosque_TOP2 Transform {
-	translation -100 280 -85
-	rotation 1 0 0 1.57
-	children Shape {
-		appearance Appearance {
-			material Material {
-				diffuseColor 0.20000000298023224 0.5 0.20000000298023224
-			}
-			texture ImageTexture { url [ "2.jpeg" ]} 
-		}
-		geometry Box {
-			size 180 20 150
-		}
-	}
-}
-
-DEF Mosque_BAR1 Transform {
-	translation -20 220 -20
-	#rotation 1 0 0 1.57
-	children Shape {
-		appearance Appearance {
-			material Material {
-				diffuseColor 0.20000000298023224 0.5 0.20000000298023224
-			}
-		}
-		geometry Box {
-			size 10 20 120
-		}
-	}
-}
-
-
-DEF Mosque_BAR2 Transform {
-	translation -180 220 -20
-	#rotation 1 0 0 1.57
-	children Shape {
-		appearance Appearance {
-			material Material {
-				diffuseColor 0.20000000298023224 0.5 0.20000000298023224
-			}
-		}
-		geometry Box {
-			size 10 20 120
-		}
-	}
-}
-
-DEF Mosque_Tour Transform {
-	translation -60 500 -150
-	children Shape {
-		appearance Appearance {
-			material Material {
-				diffuseColor 0.20000000298023224 0.5 0.20000000298023224
-			}
-		}
-		geometry Box {
-        size 50 50 200
-      }
-	}
-}
-
-
-DEF Mosque_Top Transform {
-	translation -140 400 -100
-	children Shape {
-		appearance Appearance {
-			material Material {
-				diffuseColor 0.20000000298023224 0.5 0.20000000298023224
-			}
-		}
-		geometry Sphere {
-        radius 30
-      }
-	}
-}
-
-
-
-
-
-DEF School_Door Transform {
-	translation -351 -25 -50
-	children Shape {
-		appearance Appearance {
-			material Material {
-				diffuseColor 0.6 0.2 0.2
-			}
-			texture ImageTexture { url [ "download.jpeg" ]} 
-		}
-		geometry Box {
-			size 250 300 100
-		}
-	}
-}
-DEF School_Top Transform {
-	translation -365 130 -140
-	rotation 0 1 0 -2.37
-	children Shape {
-		appearance Appearance {
-			material Material {
-				diffuseColor 0.6 0.2 0.2
-			}
-			
-		}
-		geometry Extrusion{
-		crossSection [-30 30,  30 30,-30 -30] 
-		spine [00 -20 -20, 0 20 -20]
-			}
-	}
-}
-DEF School_Top2 Transform {
-	translation -350 0 -115
-	children Shape {
-		appearance Appearance {
-			material Material {
-				diffuseColor 0.6 0.2 0.2
-			}
-			texture ImageTexture { url [ "download.jpeg" ]} 
-		}
-		geometry Box {
-			size 130 310 30
-		}
-	}
-}
-
-DEF School_cylender Transform {
-	translation -300 155 -50
-	rotation 1 0 0 1.5708
-	children Shape {
-		appearance Appearance {
-			material Material {
-				diffuseColor 0.6 0.2 0.2
-			}
-			
-		}
-		geometry  Cylinder {
-      bottom  TRUE
-      height  100
-      radius  10
-      side    TRUE
-      top     TRUE
-}
-	}
-}
-DEF School_cylender2 Transform {
-	translation -400 155 -50
-	rotation 1 0 0 1.5708
-	children Shape {
-		appearance Appearance {
-			material Material {
-				diffuseColor 0.6 0.2 0.2
-			}
-			
-		}
-		geometry  Cylinder {
-      bottom  TRUE
-      height  100
-      radius  10
-      side    TRUE
-      top     TRUE
-}
-	}
-}
 
 
 DEF MUR1 Transform {
@@ -431,7 +349,7 @@ DEF MUR2 Transform {
 
 
 DEF MUR3 Transform {
-	translation 0 2000 -65
+	translation 0 6000 -65
 	children Shape {
 		appearance Appearance {
 			material Material {
@@ -529,3 +447,23 @@ DEF MUR43 Transform {
 ROUTE toucher.touchTime TO timer.startTime
 ROUTE timer.fraction_changed TO rotator.set_fraction
 ROUTE rotator.value_changed TO MUR42.set_rotation
+
+
+
+DEF Particle1 Transform {
+children [ Inline {url "car.wrl"}
+
+]
+}
+DEF Timer1 TimeSensor {
+cycleInterval 0.5
+loop TRUE
+startTime 0.0
+stopTime 10.0
+}
+DEF Position1 PositionInterpolator {
+key [ 0,1,2,3,4,5,6,7,8,9 ]
+keyValue [ 0  0 0, 1000  0 0,  4000 0 0,9000   0 0,12000  0 0,15000  0 0]
+}
+ROUTE Timer1.fraction_changed TO Position1.set_fraction
+ROUTE Position1.value_changed TO Particle1.set_translation

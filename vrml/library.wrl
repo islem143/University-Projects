@@ -1,0 +1,465 @@
+#VRML V2.0 utf8
+
+
+
+
+
+
+
+
+
+
+DEF Library_TOP1 Transform {
+	translation 10000 7000 -1500
+	children Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 1 1 1 
+			}
+		texture ImageTexture { url [ "wal.jpeg" ]} 
+		}
+		geometry Box {
+			size 4000 6000 100
+		}
+	}
+}
+
+
+
+DEF Library_LEFT Transform {
+	translation 12000 7000 -700
+	rotation 0 1 0 1.5708
+	children Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 1 1 1
+			}
+			texture ImageTexture { url [ "wal.jpeg" ]} 
+			
+		}
+		geometry Box {
+			size 1500 6000 10
+		}
+	}
+}
+
+
+DEF Library_RIGHT Transform {
+	translation 8000 7000 -700
+	rotation 0 1 0 1.5708
+	children Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 1 1 1
+			}
+			texture ImageTexture { url [ "wal.jpeg" ]} 
+			
+		}
+		geometry Box {
+			size 1500 6000 10
+		}
+	}
+}
+
+
+DEF Library_BACK Transform {
+	translation 10000 10000 -700
+	rotation 1 0 0 1.5708
+	children Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 1 1 1
+			}
+			
+		}
+		geometry Box {
+			size 4000 1500 10
+		}
+	}
+}
+
+
+DEF Library_Front1 Transform {
+	translation 11250 4000 -700
+	rotation 1 0 0 1.5708
+	children Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 1 1 1
+			}
+			
+		}
+		geometry Box {
+			size 1500 1500 10
+		}
+	}
+}
+
+
+DEF Library_Front2_1 Transform {
+	translation 9750 4000 -700
+	rotation 1 0 0 1.5708
+	children[ Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 0 0 0
+			}
+			
+		}
+		geometry Box {
+			size 500 1500 10
+		}
+	}
+	
+	DEF toucher TouchSensor {}
+	DEF timer TimeSensor { cycleInterval 1.0  }
+	DEF rotator PositionInterpolator {
+		key [ 0.0,   1.0 ] #3 key-positions to interpolate between
+		keyValue [9750 4100 -700 , 9300 4100 -700 ]
+	}
+	]
+	
+}
+
+
+ROUTE toucher.touchTime TO timer.startTime
+ROUTE timer.fraction_changed TO rotator.set_fraction
+ROUTE rotator.value_changed TO Library_Front2_1.set_translation
+
+DEF Library_Front2_2 Transform {
+	translation 10250 4000 -700
+	rotation 1 0 0 1.5708
+	children [Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 0.5 0.5 0.5
+			}
+			
+		}
+		geometry Box {
+			size 500 1500 10
+		}
+	}
+	DEF toucher2 TouchSensor {}
+	DEF timer2 TimeSensor { cycleInterval 1.0 }
+	DEF rotator2 PositionInterpolator {
+		key [ 0.0,   1.0 ] #3 key-positions to interpolate between
+		keyValue [10250 4100 -700 , 10700 4100 -700 ]
+	}]
+}
+
+
+ROUTE toucher2.touchTime TO timer2.startTime
+ROUTE timer2.fraction_changed TO rotator2.set_fraction
+ROUTE rotator2.value_changed TO Library_Front2_2.set_translation
+
+DEF Library_Front3 Transform {
+	translation 8760 4000 -700
+	rotation 1 0 0 1.5708
+	children Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 1 1 1
+			}
+			
+		}
+		geometry Box {
+			size 1500 1500 10
+		}
+	}
+}
+
+
+DEF Library_Floor Transform {
+	translation 10000 7000 10
+	#rotation 1 0 0 1.5708
+	children Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 1 1 1
+			}
+			texture ImageTexture { url [ "lib.jpeg" ]} 
+		}
+		geometry Box {
+			size 4000 6000 10
+		}
+	}
+}
+
+
+
+Transform{
+    translation 11000 6000 0
+    children[Inline{url "table.wrl" }]
+}
+
+Transform{
+    translation 9000 6000 0
+    children[Inline{url "table.wrl" }]
+}
+
+Transform{
+    translation 9000 4500 0
+    children[Inline{url "table.wrl" }]
+}
+Transform{
+    translation 11000 4500 0
+    children[Inline{url "table.wrl" }]
+}
+
+Transform{
+    translation 9000 3000 0
+    children[Inline{url "table.wrl" }]
+}
+Transform{
+    translation 11000 3000 0
+    children[Inline{url "table.wrl" }]
+}
+
+Transform{
+    translation  9000 2700 0
+    children[Inline{url "chair.wrl" }]
+}
+
+Transform{
+    translation  9000 4200 0
+    children[Inline{url "chair.wrl" }]
+}
+
+Transform{
+    translation  9000 5700 0
+    children[Inline{url "chair.wrl" }]
+}
+
+
+Transform{
+    translation  11000 5700 0
+    children[Inline{url "chair.wrl" }]
+}
+
+Transform{
+    translation  11000 4200 0
+    children[Inline{url "chair.wrl" }]
+}
+Transform{
+    translation  11000 2700 0
+    children[Inline{url "chair.wrl" }]
+}
+
+
+
+Transform{
+    translation  10000 2700 -200
+    children[Inline{url "Books.wrl" }]
+}
+
+
+Transform{
+    translation  10000 5000 -200
+    children[Inline{url "Books.wrl" }]
+}
+
+Transform{
+    translation  8300 5000 -200
+    children[Inline{url "Books.wrl" }]
+}
+
+Transform{
+    translation  8300 2700 -200
+    children[Inline{url "Books.wrl" }]
+}
+
+
+Transform{
+    translation  11700 2700 -200
+    children[Inline{url "Books.wrl" }]
+}
+
+
+Transform{
+    translation  11700 5000 -200
+    children[Inline{url "Books.wrl" }]
+}
+
+DEF Library_FRONT1 Transform {
+	translation 1250 3750 -700
+	rotation 1 0 0 1.5708
+	children Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 1 1 1
+			}
+			texture ImageTexture { url [ "mur.jpeg" ]} 
+			
+		}
+		geometry Box {
+			size 1500 1500 10
+		}
+	}
+}
+
+DEF Library_FRONT2 Transform {
+	translation 0 3750 -700
+	rotation 1 0 0 1.5708
+     #rotation 0 1 0 1.57
+	children [Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 0.5 0.5 0.5
+			}
+			texture ImageTexture { url [ "door.jpg" ]} 
+			
+		}
+
+		geometry Box {
+			size 1000 1500 10
+		}
+    
+	}
+	DEF toucher2 TouchSensor {}
+	DEF timer2 TimeSensor { cycleInterval 1.0  }
+	DEF rotator2 PositionInterpolator {
+		key [ 0.0,   1.0 ] #3 key-positions to interpolate between
+		keyValue [0 3750 -700 , 0 3750 -2000 ]
+	}]
+}
+
+	
+ROUTE toucher2.touchTime TO timer2.startTime
+ROUTE timer2.fraction_changed TO rotator2.set_fraction
+ROUTE rotator2.value_changed TO Library_FRONT2.set_translation
+
+DEF Library_FRONT3 Transform {
+	translation -1250 3750 -700
+	rotation 1 0 0 1.5708
+	children Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 1 1 1
+			}
+			texture ImageTexture { url [ "mur.jpeg" ]} 
+			
+		}
+		geometry Box {
+			size 1500 1500 10
+		}
+	}
+}
+
+
+
+
+
+DEF Library_FLOOR Transform {
+	translation 0 5500 0
+	
+	children Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 1 1 1
+			}
+			texture ImageTexture { url [ "floor.jpeg" ]
+			
+			
+			} 
+		
+		}
+		geometry Box {
+			size 4000 3500 5
+		}
+	}
+}
+
+
+
+
+
+DEF Library_BAR1 Transform {
+	translation 1300 6000 -750
+	#rotation 1 0 0 1.57
+	children Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 1 1 1
+			}
+			texture ImageTexture { url [ "bar.jpeg" ]} 
+		}
+		geometry Box {
+			size 200 200 1500
+		}
+	}
+}
+
+
+DEF Library_BAR2 Transform {
+	translation -1200 6000 -750
+	#rotation 1 0 0 1.57
+	children Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 1 1 1
+			}
+			texture ImageTexture { url [ "bar.jpeg" ]} 
+		}
+		geometry Box {
+			size 200 200 1500
+		}
+	}
+}
+
+DEF Library_BAR3 Transform {
+	translation -1200 4500 -750
+	#rotation 1 0 0 1.57
+	children Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 1 1 1
+			}
+			texture ImageTexture { url [ "bar.jpeg" ]} 
+		}
+		geometry Box {
+			size 200 200 1500
+		}
+	}
+}
+
+DEF Library_BAR4 Transform {
+	translation 1300 4500 -750
+	#rotation 1 0 0 1.57
+	children Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 1 1 1
+			}
+			texture ImageTexture { url [ "bar.jpeg" ]} 
+		}
+		geometry Box {
+			size 200 200 1500
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+DEF Library_Tour Transform {
+	translation -1650 6900 -2800
+	children Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 1 1  1
+			}
+			texture ImageTexture { url [ "tour.jpeg" ]} 
+		}
+		geometry Box {
+        size 600 600 2500
+      }
+	}
+}
+
+

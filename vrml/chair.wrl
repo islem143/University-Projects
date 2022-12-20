@@ -1,0 +1,154 @@
+#VRML V2.0 utf8
+
+
+WorldInfo {
+	title "Table"
+}
+
+# DEF Tree_Cylender Shape {
+#         appearance Appearance {
+#                 material Material {
+#                    diffuseColor 0.58 0.29 0
+
+#                 }
+#         }
+#         	geometry Cylinder {
+#             height 1000
+#             radius 100
+#             bottom TRUE
+#             top TRUE
+#             side TRUE
+# }
+# }
+
+
+
+DEF  Chair1 Transform {
+	translation 0  2500 -85
+	children [
+        Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 0.58 0.29 0
+			}
+			
+		}
+		geometry Box {
+            size 100 100 3
+}
+	},
+  
+    ]
+}
+
+
+DEF  Chair2 Transform {
+	translation 0  2450 -130
+    rotation 1 0 0 1.57
+	children [
+        Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 0.58 0.29 0
+			}
+			
+		}
+		geometry Box {
+            size 100 100 3
+}
+	},
+  
+    ]
+}
+
+DEF Pied1 Transform {
+	translation 45  2480 -45
+    rotation 1 0 0 1.54
+	children [
+        Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 0.2 0.8 0.2
+			}
+			
+		}
+		geometry Cylinder {
+            height 80
+            radius 5
+            bottom TRUE
+            top TRUE
+            side TRUE
+}
+	},
+  
+    ]
+}
+
+DEF Pied2 Transform {
+	translation 40  2520 -45
+    rotation 1 0 0 1.54
+	children [
+        Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 0.2 0.8 0.2
+			}
+			
+		}
+		geometry Cylinder {
+            height 80
+            radius 5
+            bottom TRUE
+            top TRUE
+            side TRUE
+}
+	},
+  
+    ]
+}
+
+DEF Pied3 Transform {
+	translation -45  2520 -45
+    rotation 1 0 0 1.54
+	children [
+        Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 0.2 0.8 0.2
+			}
+			
+		}
+		geometry Cylinder {
+            height 80
+            radius 5
+            bottom TRUE
+            top TRUE
+            side TRUE
+}
+	},
+  
+    ]
+}
+
+DEF Pied4 Transform {
+	translation -40  2480 -45
+    rotation 1 0 0 1.54
+	children [
+        Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 0.2 0.8 0.2
+			}
+			
+		}
+		geometry Cylinder {
+            height 80
+            radius 5
+            bottom TRUE
+            top TRUE
+            side TRUE
+}
+	},
+  
+    ]
+}

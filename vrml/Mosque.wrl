@@ -1,0 +1,261 @@
+#VRML V2.0 utf8
+
+
+
+
+
+
+
+
+
+
+DEF Mosque_TOP1 Transform {
+	translation 0 5500 -1500
+	children Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 1 1 1 
+			}
+			texture ImageTexture { url [ "2.jpeg" ]} 
+		}
+		geometry Box {
+			size 4000 3500 100
+		}
+	}
+}
+
+
+
+DEF Mosque_LEFT Transform {
+	translation -2000 5500 -700
+	rotation 0 1 0 1.5708
+	children Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 1 1 1
+			}
+			texture ImageTexture { url [ "2.jpeg" ]} 
+		}
+		geometry Box {
+			size 1500 3500 10
+		}
+	}
+}
+
+
+DEF Mosque_RIGHT Transform {
+	translation 2000 5500 -700
+	rotation 0 1 0 1.5708
+	children Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 1 1 1
+			}
+			texture ImageTexture { url [ "2.jpeg" ]} 
+		}
+		geometry Box {
+			size 1500 3500 10
+		}
+	}
+}
+
+
+DEF Mosque_BACK Transform {
+	translation 0 7250 -400
+	rotation 1 0 0 1.5708
+	children Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 1 1 1
+			}
+			texture ImageTexture { url [ "ayat.jpeg" ]} 
+		}
+		geometry Box {
+			size 4000 800 10
+		}
+	}
+}
+
+
+DEF Mosque_FRONT1 Transform {
+	translation 1250 3750 -700
+	rotation 1 0 0 1.5708
+	children Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 1 1 1
+			}
+			texture ImageTexture { url [ "mur.jpeg" ]} 
+			
+		}
+		geometry Box {
+			size 1500 1500 10
+		}
+	}
+}
+
+DEF Mosque_FRONT2 Transform {
+	translation 0 3750 -700
+	rotation 1 0 0 1.5708
+     #rotation 0 1 0 1.57
+	children [Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 0.5 0.5 0.5
+			}
+			texture ImageTexture { url [ "door.jpg" ]} 
+			
+		}
+
+		geometry Box {
+			size 1000 1500 10
+		}
+    
+	}
+	DEF toucher2 TouchSensor {}
+	DEF timer2 TimeSensor { cycleInterval 1.0 }
+	DEF rotator2 PositionInterpolator {
+		key [ 0.0,   1.0 ] #3 key-positions to interpolate between
+		keyValue [0 3750 -700 , 0 3750 -2000 ]
+	}]
+}
+
+	
+ROUTE toucher2.touchTime TO timer2.startTime
+ROUTE timer2.fraction_changed TO rotator2.set_fraction
+ROUTE rotator2.value_changed TO Mosque_FRONT2.set_translation
+
+DEF Mosque_FRONT3 Transform {
+	translation -1250 3750 -700
+	rotation 1 0 0 1.5708
+	children Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 1 1 1
+			}
+			texture ImageTexture { url [ "mur.jpeg" ]} 
+			
+		}
+		geometry Box {
+			size 1500 1500 10
+		}
+	}
+}
+
+
+
+
+
+DEF Mosque_FLOOR Transform {
+	translation 0 5500 0
+	
+	children Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 1 1 1
+			}
+			texture ImageTexture { url [ "floor.jpeg" ]
+			
+			
+			} 
+		
+		}
+		geometry Box {
+			size 4000 3500 5
+		}
+	}
+}
+
+
+
+
+
+DEF Mosque_BAR1 Transform {
+	translation 1300 6000 -750
+	#rotation 1 0 0 1.57
+	children Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 1 1 1
+			}
+			texture ImageTexture { url [ "bar.jpeg" ]} 
+		}
+		geometry Box {
+			size 200 200 1500
+		}
+	}
+}
+
+
+DEF Mosque_BAR2 Transform {
+	translation -1200 6000 -750
+	#rotation 1 0 0 1.57
+	children Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 1 1 1
+			}
+			texture ImageTexture { url [ "bar.jpeg" ]} 
+		}
+		geometry Box {
+			size 200 200 1500
+		}
+	}
+}
+
+DEF Mosque_BAR3 Transform {
+	translation -1200 4500 -750
+	#rotation 1 0 0 1.57
+	children Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 1 1 1
+			}
+			texture ImageTexture { url [ "bar.jpeg" ]} 
+		}
+		geometry Box {
+			size 200 200 1500
+		}
+	}
+}
+
+DEF Mosque_BAR4 Transform {
+	translation 1300 4500 -750
+	#rotation 1 0 0 1.57
+	children Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 1 1 1
+			}
+			texture ImageTexture { url [ "bar.jpeg" ]} 
+		}
+		geometry Box {
+			size 200 200 1500
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+DEF Mosque_Tour Transform {
+	translation -1650 6900 -2800
+	children Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 1 1  1
+			}
+			texture ImageTexture { url [ "tour.jpeg" ]} 
+		}
+		geometry Box {
+        size 600 600 2500
+      }
+	}
+}
+
+

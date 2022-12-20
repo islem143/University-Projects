@@ -1,0 +1,135 @@
+#VRML V2.0 utf8
+
+
+WorldInfo {
+	title "Carr"
+}
+
+# DEF Tree_Cylender Shape {
+#         appearance Appearance {
+#                 material Material {
+#                    diffuseColor 0.58 0.29 0
+
+#                 }
+#         }
+#         	geometry Cylinder {
+#             height 1000
+#             radius 100
+#             bottom TRUE
+#             top TRUE
+#             side TRUE
+# }
+# }
+
+
+
+DEF Tree_Cylender Transform {
+	translation 0  2500 -100
+
+	children [
+        Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 0.58 0.29 0
+			}
+			
+		}
+		geometry Box {
+            size 300 200 100
+}
+	},
+  
+    ]
+}
+
+
+
+DEF Car_Shpere1 Transform {
+	translation 80  2600 -40
+
+	children [
+        Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 0.2 0.8 0.2
+			}
+			
+		}
+		geometry Cylinder {
+            height 40
+            radius 40
+            bottom TRUE
+            top TRUE
+            side TRUE
+}
+	},
+  
+    ]
+}
+DEF Car_Shpere2 Transform {
+	translation 80  2400 -40
+
+	children [
+        Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 0.2 0.8 0.2
+			}
+			
+		}
+		geometry Cylinder {
+            height 40
+            radius 40
+            bottom TRUE
+            top TRUE
+            side TRUE
+}
+	},
+  
+    ]
+}
+DEF Car_Shpere3 Transform {
+	translation -80  2400 -40
+
+	children [
+        Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 0.2 0.8 0.2
+			}
+			
+		}
+		geometry Cylinder {
+            height 40
+            radius 40
+            bottom TRUE
+            top TRUE
+            side TRUE
+}
+	},
+  
+    ]
+}
+
+DEF Car_Shpere4 Transform {
+	translation -80  2600 -40
+
+	children [
+        Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 0.2 0.8 0.2
+			}
+			
+		}
+		geometry Cylinder {
+            height 40
+            radius 40
+            bottom TRUE
+            top TRUE
+            side TRUE
+}
+	},
+  
+    ]
+}
